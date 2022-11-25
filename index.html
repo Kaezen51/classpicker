@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="javasript.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>WoW Class Picker</title>
 </head>
@@ -20,99 +21,56 @@
     <div id="page-wrapper">
         <header>
             <div class="welcome-screen">
-            <h3>Bienvenidos a World of Warcraft <span class="dragonflight">Dragonflight</span> selector de clase/spec
-                random.
-            </h3>
-            <p>Para empezar, presiona el boton de
-                <em>
-                    <b>"clase"</b>
-                </em>
-                y
-                <br>
-                de acuerdo con el resultado dentro del recuadro, persiona el boton respectivo.
-            </p>
-        </div>
+                <h3>Bienvenidos a World of Warcraft <span class="dragonflight">Dragonflight</span> selector de
+                    clase/spec
+                    random.
+                </h3>
+                <p>Para empezar, presiona el boton de
+                    <em>
+                        <b>"clase"</b>
+                    </em>
+                    y
+                    <br>
+                    de acuerdo con el resultado dentro del recuadro, persiona el boton respectivo.
+                </p>
         </header>
         <main>
             <div id="contentwrapper">
-            <h3>Escoge una clase aleatoria:</h3>
-            <div class="buttons">
-                <button class="btns" onclick="showRandomFrom(arr1);">Clase</button>
-            </div>
-            <div class="text"></div>
-            <h3>Escoge una especialidad aleatoria:</h3>
-            <div class="buttons">
-                <button class="btns tanque" onclick="showRandomFrom(arr2);">Tanque</button>
-                <button class="btns daño" onclick="showRandomFrom(arr3);">Daño</button>
-                <button class="btns sanador" onclick="showRandomFrom(arr4);">Sanador</button>
-            </div>
-            <div class="buttons">
-            <button class="btns reset_btn" type="reset" onclick="location.reload()">Resetear</button>
-        </div>
-            <script>
-                var arr1 = [
-                    "Tanque", "Sanador", "Daño"
-                ],
-                    arr2 = [
-                        "DK Sangre",
-                        "DH Venganza",
-                        "Druida Guardian",
-                        "Monje Cervecero",
-                        "Paladin Proteccion",
-                        "Guerrero Proteccion"
-                    ],
-                    arr3 = [
-                        "DK Escarcha",
-                        "Dk Profano",
-                        "Druida Feral",
-                        "Druida Balance",
-                        "Cazador Punteria",
-                        "Hunter Bestias",
-                        "Hunter Supervivencia",
-                        "Mago Escarcha",
-                        "Mago Fuego",
-                        "Mago Arcano",
-                        "Monje Viajedo del Viento",
-                        "Paladin Reprension",
-                        "Sacerdote Sombra",
-                        "Picaro Asesinato",
-                        "Picaro Sutileza",
-                        "Picaro Forajido",
-                        "Chaman Elemental",
-                        "Chaman Mejora",
-                        "Brujo Demoniologia",
-                        "Brujo Destruccion",
-                        "Brujo Afliccion",
-                        "Guerrero Furia",
-                        "Guerrero Armas",
-                        "Evocador Devastacion",
-                    ],
-                    arr4 = [
-                        "Restoration Druid",
-                        "Chaman Restauracion",
-                        "Monje Tejedor de Niebla",
-                        "Paladin Sagrado",
-                        "Sacerdote Sagrado",
-                        "Sacerdote Disciplina",
-                        "Evocador Preservacion"
+                <h3>Escoge una clase aleatoria:</h3>
+                <div class="buttons">
+                    <button class="btns" onclick="showRandomFrom(arr1);">Clase</button>
+                </div>
+                <div class="text"></div>
+                <h3>Escoge una especialidad aleatoria:</h3>
+                <div class="buttons">
+                    <button class="btns tanque" onclick="showRandomFrom(arr2);">Tanque</button>
+                    <button class="btns daño" onclick="showRandomFrom(arr3);">Daño</button>
+                    <button class="btns sanador" onclick="showRandomFrom(arr4);">Sanador</button>
+                </div>
+                <div class="buttons">
+                    <button class="btns reset_btn" type="reset" onclick="location.reload()">Resetear</button>
+                </div>
 
-                    ];
-
-                function showRandomFrom(chosenArray) {
-                    document.getElementsByClassName("text")[0].innerHTML = chosenArray[Math.floor(Math.random() * chosenArray.length)];
-                }
-            </script>
-            <iframe src="https://www.youtube.com/embed/2oehupehLww" title="YouTube video player" frameborder="0"
-                allowfullscreen></iframe>
-            <div id="contentframe">
-                <h2>Para ver mas contenido, dale click <a id="channel-link" href="http://www.youtube.com/@kaezen51"
-                        target="_blank" rel="noopener noreferrer">aqui</a>!</h2>
+                <div class="bottom-left">
+                    <iframe src="https://www.youtube.com/embed/2oehupehLww" title="YouTube video player" frameborder="0"
+                        allowfullscreen></iframe>
+                    <div id="contentframe">
+                        <h2>Para ver mas contenido, dale click <a id="channel-link"
+                                href="http://www.youtube.com/@kaezen51" target="_blank"
+                                rel="noopener noreferrer">aqui</a>!</h2>
+                    </div>
+                </div>
             </div>
-        </div>
+    </div>
     </main>
     <footer id="footer">
         <p>Kaezen51 ®2022 .</p>
     </footer>
+    <script>
+        function showRandomFrom(chosenArray) {
+            document.getElementsByClassName("text")[0].innerHTML = chosenArray[Math.floor(Math.random() * chosenArray.length)];
+        }
+    </script>
 </body>
 
 </html>
