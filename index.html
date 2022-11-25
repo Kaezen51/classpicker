@@ -19,6 +19,7 @@
     </div>
     <div id="page-wrapper">
         <header>
+            <div class="welcome-screen">
             <h3>Bienvenidos a World of Warcraft <span class="dragonflight">Dragonflight</span> selector de clase/spec
                 random.
             </h3>
@@ -30,8 +31,10 @@
                 <br>
                 de acuerdo con el resultado dentro del recuadro, persiona el boton respectivo.
             </p>
+        </div>
         </header>
         <main>
+            <div id="contentwrapper">
             <h3>Escoge una clase aleatoria:</h3>
             <div class="buttons">
                 <button class="btns" onclick="showRandomFrom(arr1);">Clase</button>
@@ -43,7 +46,9 @@
                 <button class="btns daño" onclick="showRandomFrom(arr3);">Daño</button>
                 <button class="btns sanador" onclick="showRandomFrom(arr4);">Sanador</button>
             </div>
+            <div class="buttons">
             <button class="btns reset_btn" type="reset" onclick="location.reload()">Resetear</button>
+        </div>
             <script>
                 var arr1 = [
                     "Tanque", "Sanador", "Daño"
@@ -103,7 +108,7 @@
                 <h2>Para ver mas contenido, dale click <a id="channel-link" href="http://www.youtube.com/@kaezen51"
                         target="_blank" rel="noopener noreferrer">aqui</a>!</h2>
             </div>
-    </div>
+        </div>
     </main>
     <footer id="footer">
         <p>Kaezen51 ®2022 .</p>
