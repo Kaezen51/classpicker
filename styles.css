@@ -108,7 +108,7 @@ iframe {
     width: 250px;
     height: 200px;
   }
-  #contentframe {
+  body {
     font-size: 1.5rem;
   }
 }
