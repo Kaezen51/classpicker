@@ -24,7 +24,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #00beef;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5em;
@@ -46,6 +46,8 @@ html {
 }
 
 #contentframe {
+  display: grid;
+  justify-content: center;
   width: 470px;
   height: 410px;
   position: absolute;
